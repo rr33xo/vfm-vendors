@@ -3,4 +3,5 @@ Allow: /
 Disallow: /vendor
 Disallow: /studio
 Disallow: /welcome
+Disallow: /reset-password
 Sitemap: https://rr33xo.github.io/vfm-vendors/sitemap.xml
