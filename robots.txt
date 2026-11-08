@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /vendor
+Disallow: /studio
+Disallow: /welcome
+Sitemap: https://rr33xo.github.io/vfm-vendors/sitemap.xml
