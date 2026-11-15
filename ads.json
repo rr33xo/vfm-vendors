@@ -1,0 +1,7 @@
+{
+  "_how": "Sponsored banner on the homepage. Add an approved ad with its start and end date (one week). Max 'slots' run at once; each shows 'rotateSeconds' before sliding to the next. Publish the site to change ads; the app reads this file live.",
+  "slots": 3,
+  "rotateSeconds": 8,
+  "pricePerWeek": 99,
+  "ads": []
+}
