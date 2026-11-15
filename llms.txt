@@ -1,0 +1,16 @@
+# VEYGO
+
+> VEYGO (veygoapp.com) is a free live map of mobile food vendors: food trucks, taco stands, carts and pop-ups. Vendors post where they're parked and for how long, and their pins move when they do. Mission: every vendor found, every customer fed.
+
+## For customers
+- [Live map](https://veygoapp.com/?map=1): see which vendors are open near you right now. Free, no account needed to browse.
+- Tap a pin to see today's spot, menu, photos and hours, and get directions.
+
+## For vendors
+- [Get on the map](https://veygoapp.com/): create a vendor page, post your spot when you park.
+- [Printable window sticker and flyer](https://veygoapp.com/downloads)
+- Beta offer: 3 months free with code BETA.
+
+## Contact
+- Instagram: https://instagram.com/veygoapp
+- TikTok: https://www.tiktok.com/@veygo.live
