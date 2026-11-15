@@ -5,4 +5,4 @@ Disallow: /studio
 Disallow: /welcome
 Disallow: /reset-password
 Disallow: /account
-Sitemap: https://rr33xo.github.io/vfm-vendors/sitemap.xml
+Sitemap: https://veygoapp.com/sitemap.xml
