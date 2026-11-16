@@ -5,4 +5,5 @@ Disallow: /studio
 Disallow: /welcome
 Disallow: /reset-password
 Disallow: /account
+Disallow: /creator
 Sitemap: https://veygoapp.com/sitemap.xml
