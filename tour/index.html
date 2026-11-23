@@ -67,9 +67,9 @@
   .tour.is-live .screen { position: absolute; inset: 0; opacity: 0; will-change: opacity, transform; }
   .tour.is-live .screen img { width: 100%; height: 100%; object-fit: cover; object-position: top; border: 0; border-radius: 0; box-shadow: none; margin: 0; }
   .tour.is-live .note { position: absolute; z-index: 6; width: min(340px, calc(100vw - 32px)); left: 50%; bottom: calc(18px + env(safe-area-inset-bottom,0px));
-    transform: translate(-50%, 14px); opacity: 0; pointer-events: none; transition: opacity .4s, transform .4s;
+    transform: translate(-50%, 14px); opacity: 0; pointer-events: none; transition: opacity .12s, transform .12s;
     background: rgba(16,22,30,.72); -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); box-shadow: 0 18px 40px rgba(0,0,0,.45); }
-  .tour.is-live .note.on { opacity: 1; transform: translate(-50%, 0); pointer-events: auto; }
+  .tour.is-live .note.on { opacity: 1; transform: translate(-50%, 0); pointer-events: auto; transition: opacity .35s .12s, transform .35s .12s; }
   .tour.is-live .progress { display: flex; gap: 6px; position: absolute; z-index: 6; left: 50%; top: calc(76px + env(safe-area-inset-top,0px)); transform: translateX(-50%); }
   .tour.is-live .progress i { width: 26px; height: 4px; border-radius: 4px; background: rgba(255,255,255,.22); overflow: hidden; position: relative; }
   .tour.is-live .progress i b { position: absolute; inset: 0; background: var(--accent); transform-origin: left; transform: scaleX(var(--f,0)); }
