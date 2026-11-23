@@ -1,16 +1,41 @@
 # VEYGO
 
-> VEYGO (veygoapp.com) is a free live map of mobile food vendors: food trucks, taco stands, carts and pop-ups. Vendors post where they're parked and for how long, and their pins move when they do. Mission: every vendor found, every customer fed.
+> VEYGO (veygoapp.com) is a free live map of vendors whose spot moves: food trucks, taco stands, carts, dessert and coffee trucks, market and pop-up sellers, and mobile services. Vendors post where they're set up and for how long, and their pins move when they do. VEYGO stands for Vendors Everywhere You Go. Mission: every vendor found, every customer fed.
 
 ## For customers
 - [Live map](https://veygoapp.com/?map=1): see which vendors are open near you right now. Free, no account needed to browse.
 - Tap a pin to see today's spot, menu, photos and hours, and get directions.
+- [Spin the wheel](https://veygoapp.com/spin): can't decide what to eat? It picks from the food vendors open near you.
+- [Popular searches](https://veygoapp.com/find/): pages for searches like "food trucks near me open now", "taco truck near me", "tamales near me" and "mobile car detailing near me".
+- [Food trucks by city](https://veygoapp.com/food-trucks/): a page for each of more than 140 cities, listing the vendors live near that city.
+- VEYGO is new, so some areas are still filling in. It started in Stockton, California, and works in any city.
 
 ## For vendors
-- [Get on the map](https://veygoapp.com/): create a vendor page, post your spot when you park.
-- [Printable window sticker and flyer](https://veygoapp.com/downloads)
-- Beta offer: 3 months free with code BETA.
+- [How it works for vendors](https://veygoapp.com/vendors): your own page, a live pin that follows you, and customers who follow you. For food trucks, carts, stands, markets, pop-ups and mobile services.
+- [Join](https://veygoapp.com/join): $29 a month or $290 a year, no set-up fee, cancel any time. Each extra truck, cart or location is $15 a month.
+- Beta offer: the first 25 vendors get 3 months free with code BETA.
+- [Printable window stickers, flyers and handouts](https://veygoapp.com/downloads), the [vendor flyer](https://veygoapp.com/flyer/) and the [window sticker](https://veygoapp.com/sticker/).
+
+## For creators and reviewers
+- [Creator and affiliate program](https://veygoapp.com/affiliates): get a code and a link, and earn 20% of everything each vendor you bring in pays during their first year.
+
+## The apps
+- [Get VEYGO](https://veygoapp.com/app): the website works on any phone today. The Android app is in its Google Play test, and anyone with an Android phone can join as a founding tester. The iPhone app is not out yet; there is a waitlist.
+
+## For local businesses
+- [Advertise](https://veygoapp.com/advertise): a week in the Sponsored banner above the map. Every ad is reviewed before it goes live.
+
+## Events and catering
+- VEYGO does not take bookings. People planning an event can find local vendors on the map and contact them directly from their page.
+
+## Videos
+- [How VEYGO works, in short videos](https://veygoapp.com/promo/)
+
+## Help and policies
+- [Submit a ticket](https://veygoapp.com/support) · [Privacy](https://veygoapp.com/privacy) · [Terms](https://veygoapp.com/terms) · [Delete your account](https://veygoapp.com/delete-account)
 
 ## Contact
 - Instagram: https://instagram.com/veygoapp
 - TikTok: https://www.tiktok.com/@veygo.live
+- X: https://x.com/veygoapp
+- Facebook: https://www.facebook.com/veygoapp
