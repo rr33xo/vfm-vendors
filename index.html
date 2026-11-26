@@ -41,21 +41,23 @@ if (location.search) location.replace("/map" + location.search + location.hash);
   html { scroll-behavior: smooth; }
   body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.55 -apple-system, system-ui, "Segoe UI", sans-serif; -webkit-font-smoothing: antialiased; overflow-x: clip; }
   h1, h2, h3, .brand, .big { font-family: Unbounded, -apple-system, system-ui, sans-serif; letter-spacing: -.01em; }
-  a { color: inherit; }
+  a { color: inherit; -webkit-tap-highlight-color: transparent; }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
   img { max-width: 100%; }
   .wrap { max-width: 1160px; margin: 0 auto; padding-left: var(--gut-l); padding-right: var(--gut-r); }
   .kicker { color: var(--accent-ink); font-weight: 800; letter-spacing: .14em; text-transform: uppercase; font-size: 12px; margin: 0 0 14px; }
   .pill { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 12px 22px; border-radius: 999px; background: var(--ink); color: #fff; font-weight: 700; text-decoration: none; font-size: 16px; white-space: nowrap;
     box-shadow: 0 10px 24px -12px rgba(17,24,32,.55); transition: transform .2s, box-shadow .2s, background .2s; }
-  .pill:hover { transform: translateY(-1px); box-shadow: 0 16px 30px -14px rgba(17,24,32,.6); }
+  @media (hover: hover) { .pill:hover { transform: translateY(-1px); box-shadow: 0 16px 30px -14px rgba(17,24,32,.6); } }
+  .pill:active { transform: scale(.97); }
   .pill.hot { background: var(--accent); box-shadow: 0 12px 28px -12px rgba(255,107,44,.75); }
   .pill.ghost { background: var(--surface); color: var(--ink); border: 1px solid var(--line); box-shadow: var(--shadow-sm); }
-  .pill.small { min-height: 38px; padding: 8px 16px; font-size: 14px; }
+  .pill.small { min-height: 44px; padding: 8px 18px; font-size: 14px; }
 
   /* Top bar */
   .bar { position: sticky; top: 0; z-index: 30; padding-top: env(safe-area-inset-top,0px); background: rgba(246,244,240,.78); -webkit-backdrop-filter: saturate(1.6) blur(16px); backdrop-filter: saturate(1.6) blur(16px); border-bottom: 1px solid var(--line); }
   .bar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 60px; }
-  .brand { display: flex; align-items: center; gap: 8px; font-weight: 800; text-decoration: none; font-size: 17px; }
+  .brand { display: flex; align-items: center; gap: 8px; min-height: 44px; font-weight: 800; text-decoration: none; font-size: 17px; }
   .brand img { width: 28px; height: 28px; border-radius: 8px; }
   .nav { display: flex; align-items: center; gap: 24px; font-weight: 600; font-size: 14px; }
   .nav a:not(.pill) { text-decoration: none; color: var(--ink-2); }
@@ -136,7 +138,7 @@ if (location.search) location.replace("/map" + location.search + location.hash);
   .note h3 { margin: 6px 0 6px; font-size: clamp(20px, 2.6vw, 26px); line-height: 1.15; text-wrap: balance; }
   .note p { margin: 0; color: var(--muted); }
   .progress { display: none; }
-  .tour.is-live { height: calc(var(--n,5) * 100svh + 40svh); }
+  .tour.is-live { height: calc(var(--n,5) * 72svh + 28svh); }
   .tour.is-live .stage { position: sticky; top: 0; height: 100svh; max-width: none; margin: 0; padding: 0; display: block; overflow: hidden; perspective: 1600px;
     background: radial-gradient(50% 40% at 50% 60%, rgba(255,107,44,.12), transparent 70%); }
   .tour.is-live .ph { display: block; position: absolute; left: 50%; top: 53%; width: min(290px, 60vw, 36svh); margin: calc(min(290px, 60vw, 36svh) * -1.083) 0 0 calc(min(290px, 60vw, 36svh) * -.5); }
@@ -165,7 +167,8 @@ if (location.search) location.replace("/map" + location.search + location.hash);
   .bento { display: grid; grid-template-columns: repeat(6, minmax(0,1fr)); gap: 16px; padding-block: 48px 24px; }
   .tile { position: relative; min-width: 0; overflow: hidden; padding: 28px 26px; border-radius: 28px; background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow-sm); text-decoration: none; display: block;
     transition: transform .25s, box-shadow .25s; }
-  a.tile:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+  @media (hover: hover) { a.tile:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); } }
+  a.tile:active { transform: scale(.985); }
   .tile .num { font-family: Unbounded, sans-serif; font-weight: 800; color: var(--accent-ink); font-size: 13px; letter-spacing: .1em; }
   .tile h3 { font-size: 22px; line-height: 1.2; margin: 10px 0 8px; }
   .tile p { margin: 0; color: var(--muted); max-width: 36ch; }
@@ -217,7 +220,8 @@ if (location.search) location.replace("/map" + location.search + location.hash);
   .find h2 { font-size: 20px; margin: 0 0 16px; }
   .find ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
   .find a { display: inline-block; padding: 10px 16px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); text-decoration: none; font-weight: 600; font-size: 15px; box-shadow: var(--shadow-sm); }
-  .find a:hover { border-color: rgba(17,24,32,.22); }
+  @media (hover: hover) { .find a:hover { border-color: rgba(17,24,32,.22); } }
+  .find a:active { background: #efebe5; }
 
   .end { padding-block: 24px 72px; }
   .end .panel { text-align: center; padding: 72px 24px; border-radius: 36px; color: #fff; background: radial-gradient(60% 80% at 50% 0%, rgba(255,107,44,.35), transparent 70%), var(--deep); box-shadow: var(--shadow-lg); }
@@ -234,12 +238,16 @@ if (location.search) location.replace("/map" + location.search + location.hash);
   footer small { display: block; width: 100%; font-size: 13px; }
 
   /* Reveal on scroll */
-  .js .rise { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
-  .js .rise.in { opacity: 1; transform: none; }
+  .js .rise { opacity: 0; translate: 0 24px; transition: opacity .7s ease, translate .7s cubic-bezier(.2,.7,.2,1), transform .25s, box-shadow .25s; }
+  .js .rise.in { opacity: 1; translate: none; }
+  @media (hover: none) {
+    .tag, .tour.is-live .note { -webkit-backdrop-filter: none; backdrop-filter: none; background: rgba(255,255,255,.97); }
+    .bar { -webkit-backdrop-filter: none; backdrop-filter: none; background: rgba(246,244,240,.97); }
+  }
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     .tag { animation: none; }
-    .js .rise { opacity: 1; transform: none; transition: none; }
+    .js .rise { opacity: 1; translate: none; transition: none; }
   }
 </style>
 </head>
@@ -402,6 +410,7 @@ if (location.search) location.replace("/map" + location.search + location.hash);
   document.documentElement.classList.add("js");
   const still = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+  const touch = matchMedia("(hover: none)").matches;
 
   // Give every phone real thickness: thin layers stacked behind the screen.
   const tour = document.querySelector(".tour");
@@ -409,12 +418,13 @@ if (location.search) location.replace("/map" + location.search + location.hash);
   document.querySelectorAll(".ph").forEach((ph) => {
     if (ph.closest(".tour") && still) return;
     const frag = document.createDocumentFragment();
-    for (let k = 1; k <= 11; k++) { const i = document.createElement("i"); i.style.setProperty("--k", k); frag.appendChild(i); }
+    // Phones and tablets get half the layers (same 11 px depth), so scrolling stays smooth.
+    for (let k = 1; k <= 11; k += touch ? 2 : 1) { const i = document.createElement("i"); i.style.setProperty("--k", k); frag.appendChild(i); }
     ph.prepend(frag);
   });
 
   // Reveal sections as they come into view.
-  const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: 0.15 });
+  const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: 0, rootMargin: "0px 0px -6% 0px" });
   document.querySelectorAll(".rise").forEach((el) => io.observe(el));
 
   // The headline cycles through what people come looking for (the same list the app uses).
@@ -428,13 +438,26 @@ if (location.search) location.replace("/map" + location.search + location.hash);
 
   if (still) return;
 
-  // Hero phones lean with the pointer and turn as you scroll away.
+  // Hero phones lean with the mouse, or follow a finger sliding across them (scrolling still works).
+  const show = document.querySelector(".showcase");
   const mid = document.querySelector(".slot.mid .ph"), sides = document.querySelectorAll(".slot.side .ph");
-  let mx = 0, my = 0;
+  let mx = 0, my = 0, ease = 0;
   addEventListener("pointermove", (e) => { if (e.pointerType !== "mouse") return; mx = e.clientX / innerWidth - .5; my = e.clientY / innerHeight - .5; queue(); }, { passive: true });
+  const lean = (e) => { const t = e.touches[0], r = show.getBoundingClientRect(); mx = clamp((t.clientX - r.left) / r.width - .5, -.5, .5); my = clamp((t.clientY - r.top) / r.height - .5, -.5, .5) * .6; queue(); };
+  show.addEventListener("touchstart", lean, { passive: true });
+  show.addEventListener("touchmove", lean, { passive: true });
+  const settle = () => { const x0 = mx, y0 = my, t0 = performance.now();
+    cancelAnimationFrame(ease);
+    const back = (t) => { const k = Math.min(1, (t - t0) / 450), e = 1 - (1 - k) ** 3; mx = x0 * (1 - e); my = y0 * (1 - e); draw(); if (k < 1) ease = requestAnimationFrame(back); };
+    ease = requestAnimationFrame(back); };
+  show.addEventListener("touchend", settle, { passive: true });
+  show.addEventListener("touchcancel", settle, { passive: true });
 
   const track = document.querySelector(".strip .track");
   const mini = document.querySelector(".tile .mini .ph"), vdev = document.querySelector(".product .ph"), wheel = document.querySelector(".wheel");
+  let loop = 1;
+  const measure = () => { loop = track.scrollWidth / 2 || 1; };
+  measure();
 
   // Scroll tour: the phone turns while the real screens cross-fade inside it.
   const stage = tour.querySelector(".stage"), phone = tour.querySelector(".ph");
@@ -445,30 +468,41 @@ if (location.search) location.replace("/map" + location.search + location.hash);
   prog.innerHTML = screens.map(() => "<i><b></b></i>").join(""); stage.appendChild(prog);
   const ticks = [...prog.querySelectorAll("b")];
 
-  const seen = (el) => { const r = el.getBoundingClientRect(); return clamp(1 - (r.top + r.height / 2) / innerHeight, 0, 1); };
-  let ticking = false;
+  // Read every position first, then write: no layout work is forced in the middle of a frame.
+  const box = (el) => el.getBoundingClientRect();
+  const near = (r, vh) => r.bottom > -vh * .2 && r.top < vh * 1.2;
+  const seen = (r, vh) => clamp(1 - (r.top + r.height / 2) / vh, 0, 1);
+  let ticking = false, lastCur = -1;
   const queue = () => { if (!ticking) { ticking = true; requestAnimationFrame(draw); } };
   function draw() {
     ticking = false;
-    const y = scrollY, vh = innerHeight, h = clamp(y / vh, 0, 1);
-    mid.style.setProperty("--ry", (-14 + mx * 16 + h * 22).toFixed(2) + "deg");
-    mid.style.setProperty("--rx", (6 - my * 8 + h * 6).toFixed(2) + "deg");
-    sides.forEach((d, i) => { const s = i ? -1 : 1; d.style.setProperty("--ry", (s * 26 + mx * 12 - h * s * 10).toFixed(2) + "deg"); d.style.setProperty("--rx", (6 - my * 8).toFixed(2) + "deg"); });
-    track.style.transform = `translateX(${(-(y * 0.3) % (track.scrollWidth / 2)).toFixed(1)}px)`;
-    const r = tour.getBoundingClientRect(), run = tour.offsetHeight - vh;
-    const p = clamp(-r.top / run, 0, 1), pos = p * (n - 1), cur = Math.round(pos), swing = Math.sin(pos * Math.PI);
-    phone.style.setProperty("--ry", (-22 + p * 44 + swing * 6).toFixed(2) + "deg");
-    phone.style.setProperty("--rx", (10 - p * 6).toFixed(2) + "deg");
-    phone.style.setProperty("--rz", (swing * -2).toFixed(2) + "deg");
-    screens.forEach((s, i) => { const d = pos - i; s.style.opacity = i === 0 ? 1 : clamp(d * 2 + 1, 0, 1); s.style.transform = `scale(${(1.06 - clamp(d + 1, 0, 1) * 0.06).toFixed(4)})`; });
-    notes.forEach((el, i) => { const on = i === cur; el.classList.toggle("on", on); el.setAttribute("aria-hidden", on ? "false" : "true"); });
-    ticks.forEach((t, i) => t.style.setProperty("--f", clamp(pos - i + 1, 0, 1).toFixed(3)));
-    mini.style.setProperty("--ry", (-30 + seen(mini) * 24).toFixed(2) + "deg");
-    vdev.style.setProperty("--ry", (26 - seen(vdev) * 40).toFixed(2) + "deg");
-    wheel.style.transform = `rotate(${(y * 0.4).toFixed(1)}deg)`;
+    const y = scrollY, vh = document.documentElement.clientHeight || innerHeight, h = clamp(y / vh, 0, 1);
+    const rs = box(show), rt = box(tour), rm = box(mini), rv = box(vdev), rw = box(wheel), run = tour.offsetHeight - vh;
+
+    if (near(rs, vh)) {
+      mid.style.setProperty("--ry", (-14 + mx * 16 + h * 22).toFixed(2) + "deg");
+      mid.style.setProperty("--rx", (6 - my * 8 + h * 6).toFixed(2) + "deg");
+      sides.forEach((d, i) => { const s = i ? -1 : 1; d.style.setProperty("--ry", (s * 26 + mx * 12 - h * s * 10).toFixed(2) + "deg"); d.style.setProperty("--rx", (6 - my * 8).toFixed(2) + "deg"); });
+    }
+    if (y < vh * 2.5) track.style.transform = `translate3d(${(-(y * 0.3) % loop).toFixed(1)}px,0,0)`;
+    if (near(rt, vh)) {
+      const p = clamp(-rt.top / run, 0, 1), pos = p * (n - 1), cur = Math.round(pos), swing = Math.sin(pos * Math.PI);
+      phone.style.setProperty("--ry", (-22 + p * 44 + swing * 6).toFixed(2) + "deg");
+      phone.style.setProperty("--rx", (10 - p * 6).toFixed(2) + "deg");
+      phone.style.setProperty("--rz", (swing * -2).toFixed(2) + "deg");
+      screens.forEach((s, i) => { const d = pos - i; s.style.opacity = i === 0 ? 1 : clamp(d * 2 + 1, 0, 1); s.style.transform = `scale(${(1.06 - clamp(d + 1, 0, 1) * 0.06).toFixed(4)})`; });
+      if (cur !== lastCur) { lastCur = cur; notes.forEach((el, i) => { const on = i === cur; el.classList.toggle("on", on); el.setAttribute("aria-hidden", on ? "false" : "true"); }); }
+      ticks.forEach((t, i) => t.style.setProperty("--f", clamp(pos - i + 1, 0, 1).toFixed(3)));
+    }
+    if (near(rm, vh)) mini.style.setProperty("--ry", (-30 + seen(rm, vh) * 24).toFixed(2) + "deg");
+    if (near(rv, vh)) vdev.style.setProperty("--ry", (26 - seen(rv, vh) * 40).toFixed(2) + "deg");
+    if (near(rw, vh)) wheel.style.transform = `rotate(${(y * 0.4).toFixed(1)}deg)`;
   }
   addEventListener("scroll", queue, { passive: true });
-  addEventListener("resize", queue);
+  addEventListener("resize", () => { measure(); queue(); });
+  addEventListener("pageshow", () => { measure(); queue(); });
+  if (document.fonts) document.fonts.ready.then(() => { measure(); queue(); });
+  addEventListener("load", () => setTimeout(() => screens.forEach((s) => { const im = s.querySelector("img"); if (im) im.loading = "eager"; }), 600));
   draw();
 })();
 </script>
